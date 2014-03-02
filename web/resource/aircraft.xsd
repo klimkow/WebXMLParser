@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com" xmlns:tns="http://www.example.com" elementFormDefault="qualified">  
+        
+        <element name="airplane">
+            <complexType>
+                <sequence>
+                    <element name="airpost" minOccurs="0" maxOccurs="unbounded">
+                        <complexType>   
+                            <sequence>   
+                                <element name="model" type="string" />
+                                <element name="capacity" type="double" />     
+                                <element name="carrying" type="double" />     
+                                <element name="fuel" type="integer" />   
+                                <element name="distance" type="integer" /> 
+                            </sequence>   
+                                <attribute name="ID" type="ID" use="required" />  
+                                <attribute name="priority" type="tns:Priority" use="required" /> 
+                        </complexType> 
+                    </element>
+                    <element name="airfreightor" minOccurs="0" maxOccurs="unbounded">	
+                        <complexType>   
+                            <sequence>   
+                                <element name="model" type="string" />
+                                <element name="capacity" type="double" />     
+                                <element name="carrying" type="double" />     
+                                <element name="fuel" type="integer" />   
+                                <element name="distance" type="integer" />   
+                            </sequence>   
+                                <attribute name="ID" type="tns:ID" use="required" />  
+                        </complexType>
+                    </element>
+                    <element name="airliner" minOccurs="0" maxOccurs="unbounded">
+                        <complexType>   
+                            <sequence>   
+                                <element name="model" type="string" />
+                                <element name="capacity" type="double" />     
+                                <element name="fuel" type="integer" />   
+                                <element name="distance" type="integer" />   
+                                <element name="seats-number" type="integer" /> 
+                            </sequence>   
+                                <attribute name="ID" type="ID" use="required" />  
+                        </complexType> 
+                    </element>                    
+                </sequence>
+            </complexType>
+        </element> 
+	
+	
+	<simpleType name="ID">   
+		<restriction base="ID">      
+			<pattern value="[a-z]{1}[0-9]*"/>  
+		</restriction>  
+	</simpleType>  
+	
+	<simpleType name="Priority">   
+		<restriction base="string">      
+			<enumeration value="low"/> 
+			<enumeration value="normal"/> 
+			<enumeration value="high"/> 			
+		</restriction>  
+	</simpleType>
+	
+</schema> 

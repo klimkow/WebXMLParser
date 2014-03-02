@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<airplane xmlns="http://www.example.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com aircraft.xsd ">
+	<airpost ID="n2192" priority="low">
+		<model>Boeing 777</model>
+		<capacity>190</capacity>
+		<carrying>31.5</carrying>
+		<fuel>25600</fuel>
+		<distance>3150</distance>				
+	</airpost>
+	<airfreighter ID="n4213">
+		<model>Boeing 777 Freightor</model>
+		<capacity>636</capacity>
+		<carrying>101.9</carrying>
+		<fuel>181280</fuel>
+		<distance>9065</distance>		
+	</airfreighter>	
+	<airfreighter ID="n4214">
+		<model>Boeing 777 Freightor</model>
+		<capacity>636</capacity>
+		<carrying>101.9</carrying>
+		<fuel>181280</fuel>
+		<distance>9065</distance>		
+	</airfreighter> 
+        <airliner ID="n1012">
+		<model>Boeing 737-400</model>
+		<capacity>110</capacity>
+		<fuel>23800</fuel>
+                <carrying>101.9</carrying>
+		<distance>4204</distance>
+		<seats-number>159</seats-number>
+	</airliner>  
+        <airliner ID="n3516">
+		<model>Airbus A-320</model>
+		<capacity>99.8</capacity>
+		<fuel>24210</fuel>
+                <carrying>101.9</carrying>
+		<distance>4204</distance>
+		<seats-number>140</seats-number>
+	</airliner>  	
+	<airliner ID="n3014">
+		<model>TY 154M</model>
+		<capacity>101.4</capacity>
+		<fuel>22900</fuel>
+                <carrying>101.9</carrying>
+		<distance>5280</distance>
+		<seats-number>176</seats-number>
+	</airliner> 
+	<airliner ID="n4776">
+		<model>Bombardier CRJ 200</model>
+		<capacity>41.8</capacity>
+		<fuel>11200</fuel>
+                <carrying>101.9</carrying>
+		<distance>2713</distance>
+		<seats-number>50</seats-number>
+	</airliner> 	
+</airplane>
